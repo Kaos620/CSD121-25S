@@ -1,0 +1,7 @@
+* Wow this took longer then I expected! Very interesting activity
+* I had a really hard time doing this one because concepts were always harder to remember than doing the handy work. I'm still having a hard time understanding the code and some things
+it does even tho I've had previous experience
+* Some specific things about the Lab 2:
+    - I did no do the number 4 "For every type or class referred to in the code, you must state which package that type/class belongs to and a brief description of the purpose of the class."
+    - JLabel imageLabel = new JLabel(new ImageIcon(image)) uses the image from the imageStream argument that has the class InputStream, but I wasn't able to understand how this really works
+    - The method e.printStackTrace() used in the try catch is new to me, seems interesting but I want to learn how it really is used
