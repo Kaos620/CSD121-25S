@@ -21,7 +21,7 @@ public class Main {
 
         System.out.print("Enter Course Code: ");
         courseCode = scanner.next();
-        // Stores the values of studentID and couser code in the variables before initializing the Student
+        // Stores the values of studentID and course code in the variables before initializing the Student object
         Student student = new Student(studentID, courseCode, studentAverageGrade);
 
         System.out.print("How many grades do you want to register? ");
@@ -33,7 +33,7 @@ public class Main {
                 System.out.print("Enter Grade " + (count + 1) + ": ");
                 float grade = scanner.nextFloat();
 
-                if (grade >= 0 && grade <= 10) {
+                if (grade >= 0 && grade <= 10) { //Sets a 0-10 grading system
                     student.addGrade(grade);
                     count++;
                 }
@@ -41,16 +41,16 @@ public class Main {
                     System.out.println("Grade must be between 0 and 10");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid number format. Please try using ',' instead of '.' ");
+                System.out.println("Invalid number format. Please try using ',' instead of '.' "); //Couldn't change the format since my computer is still set to Brazil's for some reason
                 scanner.nextLine();
             }
         }
 
-        for (float item : student.grades) {
+        for (float item : student.grades) { //sets the sum of the grades to the variable first
             student.studentAverageGrade = item + student.studentAverageGrade;
         }
 
-        student.studentAverageGrade = student.studentAverageGrade /  student.grades.size();
+        student.studentAverageGrade = student.studentAverageGrade /  student.grades.size(); //After summing everything it calculates the average
         student.studentAverageGrade = Math.round(student.studentAverageGrade * 100f) / 100f;
 
 
