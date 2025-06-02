@@ -1,0 +1,8 @@
+Lab 1 -
+    Well, it's been almost a year since a used a OOP language, it took longer then I expected to do this code because Java has some differences compared to C#
+
+    * The objective was to build a code where a professor can register the students grades in a JSON file with an average grade calculated at the end.
+    * I thought of doing it separated by courses, nominating what which grade is for (mid terms, finals, etc) but I already asked for an extension,
+      if the professor asks to, I can complete it later.
+    * Most of the time spent in the code was by figuring out how the JSON works, had to use AI to get some help, also used it for the rounding of the average grade
+    * Mostly a very fun activity, I hope to come back to this code later and make it more complex, with more classes and better methods
