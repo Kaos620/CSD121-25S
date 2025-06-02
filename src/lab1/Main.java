@@ -2,7 +2,6 @@ package lab1;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.InputMismatchException;
@@ -16,13 +15,13 @@ public class Main {
         String courseCode;
         float studentAverageGrade = 0;
 
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); //System.in works to tell the code this part will receive input from user
         System.out.println("Enter Student ID");
         studentID = scanner.nextInt();
 
         System.out.print("Enter Course Code: ");
         courseCode = scanner.next();
-
+        // Stores the values of studentID and couser code in the variables before initializing the Student
         Student student = new Student(studentID, courseCode, studentAverageGrade);
 
         System.out.print("How many grades do you want to register? ");
